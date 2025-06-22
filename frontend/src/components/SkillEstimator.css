@@ -1,0 +1,101 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Container for video and form */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Fullscreen video background */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Centered form card - wider and taller */
+.form-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(15, 15, 15, 0.95);
+  padding: 60px 60px 50px;
+  border-radius: 14px;
+  width: 460px;
+  box-shadow: 0 0 25px #00f2ff;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+
+.form-card h1 {
+  margin-bottom: 30px;
+  color: #00f2ff;
+  font-size: 30px;
+}
+
+.form-group {
+  margin-bottom: 22px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ddd;
+  font-size: 18px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 17px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+button {
+  margin-top: 25px;
+  padding: 14px;
+  width: 100%;
+  background-color: #00f2ff;
+  color: black;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00c6d6;
+}
+
+.result {
+  margin-top: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+.error {
+  margin-top: 14px;
+  color: #ff5c5c;
+  font-size: 17px;
+}
